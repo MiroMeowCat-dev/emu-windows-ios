@@ -12,7 +12,8 @@ FILES = ["emu", "emu.cmd", "emu-windows.cmd", "emu_windows.py", ".gitignore", "R
          "Config/Base.xcconfig", "Config/Local.xcconfig.example",
          "data/supported-game.json", "data/resources.json", "data/desktop-symbols.json", "data/sdl.json",
          "patches/sdl2-ios.patch", "third_party/SDL-LICENSE.txt",
-         "docs/ROADMAP-zh.md", "docs/QUICKSTART-zh.md", "docs/WINDOWS-zh.md", ".github/workflows/windows-runtime.yml"]
+         "docs/ROADMAP-zh.md", "docs/QUICKSTART-zh.md", "docs/WINDOWS-zh.md", "docs/RELEASE-0.2.md",
+         ".github/workflows/windows-runtime.yml", ".github/workflows/publish-preview.yml"]
 PATTERNS = ["tools/*.py", "tools/unsupported-template.m", "app/Host/*.m", "app/Host/*.h",
             "app/Host/*.plist", "app/Host/*.entitlements", "app/Compat/*.m", "app/Compat/*.h",
             "app/Compat/*.c", "app/Compat/*.inc", "tests/test_*.py", "tests/touch_pointer.c",
