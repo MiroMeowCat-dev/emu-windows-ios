@@ -1,0 +1,598 @@
+{
+  "description": "Complete Resources directory of the supported Steam macOS build, excluding Finder metadata. No game content is stored in this repository.",
+  "files": [
+    {
+      "path": "AppIcon.icns",
+      "bytes": 224147,
+      "sha256": "26a5a7b48a0c789cbfb091a0eb02d9012ea0928a5a41712319e3e764a7ab5f0a"
+    },
+    {
+      "path": "Assets.car",
+      "bytes": 5242424,
+      "sha256": "42ec07d7a145ccd431ee6b3ed2f488c1f5befaabacde45180b1155bc9b26697b"
+    },
+    {
+      "path": "Courier.ttf",
+      "bytes": 692792,
+      "sha256": "75492ab7a80fb89c6cc933ca24df7767d0b1fc7fbd20c81c0646d65d92eae7f1"
+    },
+    {
+      "path": "Icons/MudRunnerXCode-macOS-Info.png",
+      "bytes": 6352,
+      "sha256": "28882013eab1046ff55def935e6f7edea00d024172055f9a2090359d1e2e471e"
+    },
+    {
+      "path": "Icons/snowrunner-icon_1024x1024.png",
+      "bytes": 2348664,
+      "sha256": "7a0eaca95795a48167a83d7cfb0ba163e3cb957f6e2b0fbed4255cb47eab279b"
+    },
+    {
+      "path": "Icons/snowrunner-icon_114x114.png",
+      "bytes": 38837,
+      "sha256": "731c5a3e406e1979d0d9616485bb374a1ea0618cb8f5784b512cb086e9ccf698"
+    },
+    {
+      "path": "Icons/snowrunner-icon_120x120.png",
+      "bytes": 42767,
+      "sha256": "e85a5651046c97ce81cff870eafe2d79198322ee985de9938699ca3336524f1c"
+    },
+    {
+      "path": "Icons/snowrunner-icon_128x128.png",
+      "bytes": 48052,
+      "sha256": "88a25d7f61b42ba302b3ce1993fc5421054b4e02da7f775abc1f1035d777990b"
+    },
+    {
+      "path": "Icons/snowrunner-icon_136x136.png",
+      "bytes": 53956,
+      "sha256": "a8b277011332c9fb683bc744958e02168b535a4ef83893d8dc73b04609b7d5b9"
+    },
+    {
+      "path": "Icons/snowrunner-icon_152x152.png",
+      "bytes": 66702,
+      "sha256": "aeb53ce246cc41a4580b5030067a61b7cd2c4cf5fb8fe75f955cf6ba221b592b"
+    },
+    {
+      "path": "Icons/snowrunner-icon_167x167.png",
+      "bytes": 79567,
+      "sha256": "a9093ca79894018b132874a08999c5e1f05c473142f90c473ca81c3d8308c185"
+    },
+    {
+      "path": "Icons/snowrunner-icon_16x16.png",
+      "bytes": 3287,
+      "sha256": "c9e6456dfdb11b1edfffaa91c64d6e0f6adcc9734af7be98016168a6b0fdd825"
+    },
+    {
+      "path": "Icons/snowrunner-icon_180x180.png",
+      "bytes": 91897,
+      "sha256": "cffb7fb08b3cda9576e283990a3145a99e5e6ec28a74605f09265bbd0a4876fb"
+    },
+    {
+      "path": "Icons/snowrunner-icon_192x192.png",
+      "bytes": 103830,
+      "sha256": "96f7bf1ba6f463f54fb935d2636ee5e95a61d9e03899af0cbd1d3850d88d28c2"
+    },
+    {
+      "path": "Icons/snowrunner-icon_20x20.png",
+      "bytes": 2764,
+      "sha256": "14325a75099e98f6abbdc57052958219817f918c457df298ae09f59d9c2ae524"
+    },
+    {
+      "path": "Icons/snowrunner-icon_256x256.png",
+      "bytes": 150174,
+      "sha256": "069ed419ecdd9408c04a8d18e2774033bbca41b2b07c84d14412472819ce4be7"
+    },
+    {
+      "path": "Icons/snowrunner-icon_29x29.png",
+      "bytes": 4116,
+      "sha256": "c83e5ec32efc7868b536500dd1f75a66f2b122010594533d057dc90d7f206e1a"
+    },
+    {
+      "path": "Icons/snowrunner-icon_32x32.png",
+      "bytes": 4095,
+      "sha256": "449191999a96f14735c5a457ed19af72fa65a2b49962dc167102772ed5ba0804"
+    },
+    {
+      "path": "Icons/snowrunner-icon_40x40.png",
+      "bytes": 6352,
+      "sha256": "28882013eab1046ff55def935e6f7edea00d024172055f9a2090359d1e2e471e"
+    },
+    {
+      "path": "Icons/snowrunner-icon_512x512.png",
+      "bytes": 606707,
+      "sha256": "7fa348ad07751e036804798b20a5b04a46a2c85f07929cc42bf9f0dd068a0c7e"
+    },
+    {
+      "path": "Icons/snowrunner-icon_58x58.png",
+      "bytes": 11637,
+      "sha256": "3e761627ebcf5c89f6dd9702c79b46bf893037bcd1529c16ced9685224f0d5f3"
+    },
+    {
+      "path": "Icons/snowrunner-icon_60x60.png",
+      "bytes": 12317,
+      "sha256": "43ee324c70e0ec4c8ad7733f03f7a5bffd4c456f52cdc2083cd7b8b9bea956af"
+    },
+    {
+      "path": "Icons/snowrunner-icon_64x64.png",
+      "bytes": 11653,
+      "sha256": "eeeda5d5f9d11c1a85bb7554ab2a437b2b33a09e02469f8c3991c8a63e5f73ef"
+    },
+    {
+      "path": "Icons/snowrunner-icon_76x76.png",
+      "bytes": 18618,
+      "sha256": "707205c76ee208c4b4af72c205cac3fac5f4077e841977c472bc580da6bd0021"
+    },
+    {
+      "path": "Icons/snowrunner-icon_80x80.png",
+      "bytes": 20394,
+      "sha256": "05b0de92ccc61bb8210ebe5bb47cf38baee6490790bbd64a11134c5c0c8fd0ee"
+    },
+    {
+      "path": "Icons/snowrunner-icon_87x87.png",
+      "bytes": 23689,
+      "sha256": "1cbbab6c322b2b731484bc28d8c4847afd0411febf3d3d3a1ebce7ff56cb9e61"
+    },
+    {
+      "path": "NotoSansCJK-Regular.ttc",
+      "bytes": 18748872,
+      "sha256": "e3c629cb9f416e2e57cfdfee7573d5cac3a06a681c105ec081ab9707c1f147e8"
+    },
+    {
+      "path": "TTLakesCompressed-DemiBold.ttf",
+      "bytes": 76760,
+      "sha256": "21a7c7b70674fe695683343bd60e792691082596b7682955896b87844d61a98c"
+    },
+    {
+      "path": "TTLakesCompressed-Medium.ttf",
+      "bytes": 76196,
+      "sha256": "beaaa6c5fa3365ca366b85e3e92d0414bc72945ebfd1a7e0f3f0f1c74dc82039"
+    },
+    {
+      "path": "game.retail.cfg",
+      "bytes": 48352,
+      "sha256": "71d50b1da3497c3406b136907ba11ed79ee290e355708367c1b605c370cf0258"
+    },
+    {
+      "path": "haetten.ttf",
+      "bytes": 108664,
+      "sha256": "40e898e471fa4de3ca09a6dfed961d00d6395af20fe6cf1c6b83c795bea04543"
+    },
+    {
+      "path": "logiWheel.prx",
+      "bytes": 421312,
+      "sha256": "ccd8fbea56adb3693d682727f40a819141760885a28cc98a4ea31be7e74271d8"
+    },
+    {
+      "path": "preload/paks/client/boot.pak",
+      "bytes": 467812352,
+      "sha256": "25c8320ba493e750a27e972a358753e0d284e9f7a10223683cfbb38adb1e12b9"
+    },
+    {
+      "path": "preload/paks/client/gfx.pak",
+      "bytes": 698617856,
+      "sha256": "3afc1b4a5d10ffac6bd6c47b479652524f72614fbe3ed6bea14b4e07e9e29581"
+    },
+    {
+      "path": "preload/paks/client/initial.pak",
+      "bytes": 26812416,
+      "sha256": "fbd42b5ff31f9ad562060a75858e7af5a4f60f041dbef2355025a0ebcb165f64"
+    },
+    {
+      "path": "preload/paks/client/level_main_menu_us16.pak",
+      "bytes": 78868480,
+      "sha256": "3944e970e08c27397e6ecba81549e90df83cc84eb4394098596fbee23f4c066a"
+    },
+    {
+      "path": "preload/paks/client/level_ru_02_01_crop.pak",
+      "bytes": 211808256,
+      "sha256": "f7769cd3464adb6b0fa9f0094c39843101367580083efdf9ff71d831d89b8408"
+    },
+    {
+      "path": "preload/paks/client/level_ru_02_02.pak",
+      "bytes": 473042944,
+      "sha256": "9e751812439089e7a0728778a3eb87c303b9112d175116ff25d6a2a5ffe39005"
+    },
+    {
+      "path": "preload/paks/client/level_ru_02_03.pak",
+      "bytes": 121946112,
+      "sha256": "56095dc5e941c95eebd444c302b7c2e40fa4f273cd5a5d1ef6bee1e3b2e6f8f9"
+    },
+    {
+      "path": "preload/paks/client/level_ru_02_04.pak",
+      "bytes": 115830784,
+      "sha256": "c7f50ca563c530162a16354a3e8d7b822debfc12bb6585adde79511d16a4d995"
+    },
+    {
+      "path": "preload/paks/client/level_ru_03_01.pak",
+      "bytes": 234725376,
+      "sha256": "bf0ff674f0d23fed380c150c5e8c9f93d343c7dc823168017b44cf95797230ed"
+    },
+    {
+      "path": "preload/paks/client/level_ru_03_02.pak",
+      "bytes": 231874560,
+      "sha256": "dfb50b092f1ec3720d87a52a24361912d3f10eef3d8efdf3682027405ede8aa3"
+    },
+    {
+      "path": "preload/paks/client/level_ru_04_01.pak",
+      "bytes": 252452864,
+      "sha256": "ec393352043da2a86a2f90dd9ad1ca6e57adf5518565fc31012fd6ccd121312d"
+    },
+    {
+      "path": "preload/paks/client/level_ru_04_02.pak",
+      "bytes": 254717952,
+      "sha256": "29bad9568cfaf725a4f2d69db4f436777454f628ac590ae11576e56696c7c315"
+    },
+    {
+      "path": "preload/paks/client/level_ru_04_03.pak",
+      "bytes": 245870592,
+      "sha256": "2a41a6ff6466bcdf325af0752b377d64dc847d29d38f1007078445d3626c50f8"
+    },
+    {
+      "path": "preload/paks/client/level_ru_04_04.pak",
+      "bytes": 284676096,
+      "sha256": "a2d0ce6ef4d2ad57ae0305c26497822a31d295b993b712221d8b1002727b5e86"
+    },
+    {
+      "path": "preload/paks/client/level_ru_05_01.pak",
+      "bytes": 134410240,
+      "sha256": "65fdadca791942e80b05611c052a2dd356339d1029c8979c592984891f30d6ff"
+    },
+    {
+      "path": "preload/paks/client/level_ru_05_02.pak",
+      "bytes": 102522880,
+      "sha256": "91389123e8882ce684bbf38b93a96613d9c7ff978d26102d5b4d84ae5c8cb9ee"
+    },
+    {
+      "path": "preload/paks/client/level_ru_08_01.pak",
+      "bytes": 439984128,
+      "sha256": "285494aa95f302e854f24b4a86c436010b326b61cdd3d1f9cac685c17a949800"
+    },
+    {
+      "path": "preload/paks/client/level_ru_08_02.pak",
+      "bytes": 539467776,
+      "sha256": "e745d67d1a96ebd8d3d9018a4473e5b7ddf9f229c23afb05ae67e28193cd687e"
+    },
+    {
+      "path": "preload/paks/client/level_ru_08_03.pak",
+      "bytes": 600403968,
+      "sha256": "b88b7691779922d81c8f3dfe83079aa10e64f8f03d36ab7bd2f4f86921f04895"
+    },
+    {
+      "path": "preload/paks/client/level_ru_08_04.pak",
+      "bytes": 543916032,
+      "sha256": "32613bb38933d8059198243c60aae60c78b2b900ae9d55ef1e53576649a2a3bc"
+    },
+    {
+      "path": "preload/paks/client/level_ru_13_01.pak",
+      "bytes": 449404928,
+      "sha256": "463f5a535838a239fe976bc9895d17a83bcb93db46cb30fff15b2bee28e5e3c6"
+    },
+    {
+      "path": "preload/paks/client/level_ru_test_polygon.pak",
+      "bytes": 43454464,
+      "sha256": "01f1c4be4988c07c2d42ed45110f2d8d5306dd12c2bf5c7350e2b0d7c6f75d1d"
+    },
+    {
+      "path": "preload/paks/client/level_trial_01_01.pak",
+      "bytes": 16404480,
+      "sha256": "d1ab86bb58b851c5a4f838529f8d98a7da3f3f521e67acd774ac8614a21abfdf"
+    },
+    {
+      "path": "preload/paks/client/level_trial_01_02.pak",
+      "bytes": 71507968,
+      "sha256": "e7a2827990ed49dfc4f52615957c707f6a29028d7731518f4b07dfa153a888bf"
+    },
+    {
+      "path": "preload/paks/client/level_trial_02_01.pak",
+      "bytes": 14540800,
+      "sha256": "5308ff096df4e9388a42cb8b8efac6bf2330c0d36c822394ffd4717540e837a4"
+    },
+    {
+      "path": "preload/paks/client/level_trial_02_02.pak",
+      "bytes": 20369408,
+      "sha256": "04fb744807a3bd2af69135ea64cb14f2f87fa9350303db1e30de76e362a92299"
+    },
+    {
+      "path": "preload/paks/client/level_trial_03_01.pak",
+      "bytes": 36708352,
+      "sha256": "b09af68adfd7cec595002ee6d739af30584d9c389a397d9cf4f1f76f9ef33965"
+    },
+    {
+      "path": "preload/paks/client/level_trial_03_02.pak",
+      "bytes": 89755648,
+      "sha256": "e41467bb4ebe208ffe75fd469bfec6ddef603e7f7016b540e8456bc288bb3d10"
+    },
+    {
+      "path": "preload/paks/client/level_trial_03_03.pak",
+      "bytes": 87429120,
+      "sha256": "4a53b6551f484846e05d6d94e78cfbadf5a75609ff197443d5618bc0bb62a22c"
+    },
+    {
+      "path": "preload/paks/client/level_trial_04_01.pak",
+      "bytes": 29368320,
+      "sha256": "4e05572af0082e2729034295ddb4da8c6180c900cb788d77635d11d0640a799e"
+    },
+    {
+      "path": "preload/paks/client/level_trial_04_02.pak",
+      "bytes": 82817024,
+      "sha256": "d31e418eaf5890347bc1293620fc868bc8dd7304601ff1db32ce8bbd064c1e51"
+    },
+    {
+      "path": "preload/paks/client/level_trial_05_01.pak",
+      "bytes": 85721088,
+      "sha256": "7ba5e4b377c7fbd0ab4c2685953d5eae68516bebc0dd1083069873b3fc6831d8"
+    },
+    {
+      "path": "preload/paks/client/level_us_01_01.pak",
+      "bytes": 366186496,
+      "sha256": "e9de465ae7885a92fb93d9d3ba3a61742faa8711d8e2a07d0b78194685addf98"
+    },
+    {
+      "path": "preload/paks/client/level_us_01_02.pak",
+      "bytes": 376516608,
+      "sha256": "c90803f492a63f206db33e38ff266c65af69f707d65c10cb901348d6d878b7e6"
+    },
+    {
+      "path": "preload/paks/client/level_us_01_03.pak",
+      "bytes": 182411264,
+      "sha256": "444513bd59d85d1e4c285918bfa25a10815cccdd3759cc02801c783c73c610bc"
+    },
+    {
+      "path": "preload/paks/client/level_us_01_04_new.pak",
+      "bytes": 101720064,
+      "sha256": "9ac82b7d1021862447306f80b203136e9f6bc11261b29bff178d6954c65ce84f"
+    },
+    {
+      "path": "preload/paks/client/level_us_02_01.pak",
+      "bytes": 247193600,
+      "sha256": "6e5d2d3e71cf32d13e599425965bc05010752455648c743eafed26bb38ce1aac"
+    },
+    {
+      "path": "preload/paks/client/level_us_02_02_new.pak",
+      "bytes": 72564736,
+      "sha256": "4820e19096081f95ca971c139d99edf6f4ac6a435c00211a63b50bd233169c55"
+    },
+    {
+      "path": "preload/paks/client/level_us_02_03_new.pak",
+      "bytes": 179167232,
+      "sha256": "3070d6c044ca1f0da5dee36b78b2226013990d33f2106f01ae3828d75608e126"
+    },
+    {
+      "path": "preload/paks/client/level_us_02_04_new.pak",
+      "bytes": 100052992,
+      "sha256": "562255135be00e67f3b41f9ba95dab8cf5d5c3c8321cd88e01a8abc48ec70492"
+    },
+    {
+      "path": "preload/paks/client/level_us_03_01.pak",
+      "bytes": 448991232,
+      "sha256": "b70090a4679cd1fa4263b5172c7b9a45ee229317140c6ad4cb5b839837e64a7a"
+    },
+    {
+      "path": "preload/paks/client/level_us_03_02.pak",
+      "bytes": 363372544,
+      "sha256": "13c469b2bf988ed662334e26158db209d42d039cc4148573fa41c92437c9eee4"
+    },
+    {
+      "path": "preload/paks/client/level_us_04_01.pak",
+      "bytes": 341573632,
+      "sha256": "552d15512587618855c0939e5eb19e8705ae32280a5e57f1c45a0eceaf72a3ce"
+    },
+    {
+      "path": "preload/paks/client/level_us_04_02.pak",
+      "bytes": 407240704,
+      "sha256": "f3f1cf35217fafdd63a2066ba46c2215c92d9b8462fb97169173a2bb6e63b606"
+    },
+    {
+      "path": "preload/paks/client/level_us_06_01.pak",
+      "bytes": 361357312,
+      "sha256": "e4364aae3a5b213557a9d7ab0df24b6b66cb482874d7aaeda0336c620653853b"
+    },
+    {
+      "path": "preload/paks/client/level_us_06_02.pak",
+      "bytes": 352722944,
+      "sha256": "ad0414ea2c7c39a61f26ef1ad763dfbfbdc4fe6df839520f7f90f63ef6b49cdf"
+    },
+    {
+      "path": "preload/paks/client/level_us_07_01.pak",
+      "bytes": 427388928,
+      "sha256": "7adbe73fe7542ad0e43e1c5d2b7ddf0b8432536add1cec5fc9a13f4904afa8a2"
+    },
+    {
+      "path": "preload/paks/client/level_us_09_01.pak",
+      "bytes": 407687168,
+      "sha256": "e1b1304dfaabf4f7969bdd23017d4412e07c02f87c8ca6cb1ebbdf8f9f45de70"
+    },
+    {
+      "path": "preload/paks/client/level_us_09_02.pak",
+      "bytes": 430952448,
+      "sha256": "80b512a6ccdd11871771e3548f53ed8b81ab6ab1a0327c5bf9f3b44e1590b4f6"
+    },
+    {
+      "path": "preload/paks/client/level_us_10_01.pak",
+      "bytes": 442650624,
+      "sha256": "9246a30be4a8dfedefd50f132fbd412e10808db5adb3fa60e547b2c6c7516d3d"
+    },
+    {
+      "path": "preload/paks/client/level_us_10_02.pak",
+      "bytes": 370520064,
+      "sha256": "ca84259896fdc9fc0a812d6560168121c317b67c850652b3b183af690029ccd2"
+    },
+    {
+      "path": "preload/paks/client/level_us_11_01.pak",
+      "bytes": 331112448,
+      "sha256": "72ff952fd80156d5f7b7aaf56f65517232c4cd2b562f35f44b25a319993365e1"
+    },
+    {
+      "path": "preload/paks/client/level_us_11_02.pak",
+      "bytes": 343031808,
+      "sha256": "cc00af4efe3c7a1608c2094629624cf3d12d3d9d1ed6f9418693a6496e390277"
+    },
+    {
+      "path": "preload/paks/client/level_us_12_01.pak",
+      "bytes": 348680192,
+      "sha256": "55aac8d86acb11b2817b54eb002e4a06f5968ee699178a8da166d4e4adfbbf4a"
+    },
+    {
+      "path": "preload/paks/client/level_us_12_02.pak",
+      "bytes": 386715648,
+      "sha256": "d4f1a71c23f1560a3b44252fe189b5ae6ed8bdbfd36053a504661480c896b51f"
+    },
+    {
+      "path": "preload/paks/client/level_us_12_03.pak",
+      "bytes": 418979840,
+      "sha256": "027874856db76a551653bc679ee5ede9cbd2ba822ff871868b3524f212ed7300"
+    },
+    {
+      "path": "preload/paks/client/level_us_12_04.pak",
+      "bytes": 397651968,
+      "sha256": "2535fc1c5e2025462f8f5633be38c8dd48a5f41be07d2de44211cdfea187f3a4"
+    },
+    {
+      "path": "preload/paks/client/level_us_14_01.pak",
+      "bytes": 486387712,
+      "sha256": "adbee3b390f27e45e5d087fe22294a9b9f0d8b02045d736d439ddf04eb549962"
+    },
+    {
+      "path": "preload/paks/client/level_us_14_02.pak",
+      "bytes": 474230784,
+      "sha256": "275e495130afdd2c829397ff67b5f975c90a830f340581d09de0d53ccf903327"
+    },
+    {
+      "path": "preload/paks/client/level_us_15_01.pak",
+      "bytes": 283492352,
+      "sha256": "06df463d85acd487ca539f4442fe9fe9782bde787355db4e3d8ff47fbf81d336"
+    },
+    {
+      "path": "preload/paks/client/level_us_15_02.pak",
+      "bytes": 268759040,
+      "sha256": "c5155dae81f8daa7b5a5469e78a8828c96bfef7bd2a6b405495ef9395bf94053"
+    },
+    {
+      "path": "preload/paks/client/level_us_16_01.pak",
+      "bytes": 444633088,
+      "sha256": "dd76bb6c3a950e93f11b17750bc058302aa5183a73b123a44324d545fb08a776"
+    },
+    {
+      "path": "preload/paks/client/level_us_16_02.pak",
+      "bytes": 375218176,
+      "sha256": "c96a06ffb086e00b28cf157f74b8f3dfd59b9c01aaf3e610c360961f976ea2af"
+    },
+    {
+      "path": "preload/paks/client/level_us_16_03.pak",
+      "bytes": 339267584,
+      "sha256": "564fe252e41e0e6d5b9bd632000545b44b1dee206ffadafd869989359b3b721c"
+    },
+    {
+      "path": "preload/paks/client/level_us_test_polygon.pak",
+      "bytes": 30609408,
+      "sha256": "40b092ecb0353d207525c893d63eb10cceafe6fbfbb9f2f5dc238495dd1206f8"
+    },
+    {
+      "path": "preload/paks/client/main_menu_textures.pak",
+      "bytes": 5005795328,
+      "sha256": "094d22781812eeb06e8ed955aa6a6f11d89762390bdec4eb67763dc97865a33e"
+    },
+    {
+      "path": "preload/paks/client/ref_garage_usa_interior.pak",
+      "bytes": 2404352,
+      "sha256": "06767b14ecf0bf15d300c3717b049c2d43d4a3c036928ae25006782ed9b7a121"
+    },
+    {
+      "path": "preload/paks/client/ref_upgradable_garage_int_stage_usa_interior_1.pak",
+      "bytes": 2437120,
+      "sha256": "3f316f3399a65771d2ea19152cbf644d544c960cdaa200f3ec4dc96c68caebb9"
+    },
+    {
+      "path": "preload/paks/client/ref_upgradable_garage_int_stage_usa_interior_2.pak",
+      "bytes": 2420736,
+      "sha256": "8d2e7fbde177776e104491a23a0d034cde7db0869190deb54981964d8f29cf38"
+    },
+    {
+      "path": "preload/paks/client/ref_upgradable_garage_int_stage_usa_interior_3.pak",
+      "bytes": 2437120,
+      "sha256": "b3561d8da9c17931d2ff8073e6633f708624a6172929e009d646efc30889b769"
+    },
+    {
+      "path": "preload/paks/client/shader.pak",
+      "bytes": 152297472,
+      "sha256": "a8e2db31f04c2576a266e3e5c7d7136649f1a02de63a0bd32e47f7a7c7af60bc"
+    },
+    {
+      "path": "preload/paks/client/shared.pak",
+      "bytes": 1797734400,
+      "sha256": "2609eb0d3e14f1608426172f666287a0f5fe4091c3b5900f1bdd7e51cd26c7bd"
+    },
+    {
+      "path": "preload/paks/client/shared_addon_texures.pak",
+      "bytes": 1387786240,
+      "sha256": "9b4fc01a60a4266631116c96644ced3c27719bfeb6f867fd890aef2d05f67efc"
+    },
+    {
+      "path": "preload/paks/client/shared_debug.pak",
+      "bytes": 5722112,
+      "sha256": "8b0c0bd282ab762255dc6dda7df5eeb1ccb4ee69c1b51477929da9534b00ffe1"
+    },
+    {
+      "path": "preload/paks/client/shared_level_texures.pak",
+      "bytes": 955183104,
+      "sha256": "d420627cc489397fb4928de9b6da1bd19daaafe8fc45fc2ba749a4297e25c630"
+    },
+    {
+      "path": "preload/paks/client/shared_plant_texures.pak",
+      "bytes": 619728896,
+      "sha256": "fb86c52beea130c3837d00d6ee7dc3d1104eddc2a75be2199870c60ce5b25870"
+    },
+    {
+      "path": "preload/paks/client/shared_sound.pak",
+      "bytes": 5516226560,
+      "sha256": "771385c6f36afc617f6979de7ba1ebeba7ad92d239e27b008a12d5a672c55607"
+    },
+    {
+      "path": "preload/paks/client/shared_textures.pak",
+      "bytes": 8136683520,
+      "sha256": "34cb65262c965c8b5d5bded891c751227188365f85630afca99939b949af68e1"
+    },
+    {
+      "path": "preload/paks/client/shared_textures_base.pak",
+      "bytes": 141946880,
+      "sha256": "0a644d8ae97318b6dc982f1ed6335982a6a9e3c60ea09d5db7103ae24888593e"
+    },
+    {
+      "path": "preload/paks/client/shared_trailer_texures.pak",
+      "bytes": 598478848,
+      "sha256": "f2563a44617aff5b09de91b82574230a6a22dcf73ff94c41accf2787f886b51a"
+    },
+    {
+      "path": "preload/paks/client/shared_truck_texures_0.pak",
+      "bytes": 2821935104,
+      "sha256": "b0f5897564deb19c240d9622e5a71092a248eb2b62c02c5a610ccc20fe432dd3"
+    },
+    {
+      "path": "preload/paks/client/shared_truck_texures_1.pak",
+      "bytes": 2486521856,
+      "sha256": "282c0cd8816dd57c7690c4109ec15f2703fe29755a344106ab553cdc6ac185c8"
+    },
+    {
+      "path": "preload/paks/client/shared_truck_texures_2.pak",
+      "bytes": 1270198272,
+      "sha256": "1f7bfd564359b9513f84754878b6ac0c033aeb48fdfc4ef10d271b84a798d8a1"
+    },
+    {
+      "path": "preload/paks/client/shared_truck_texures_3.pak",
+      "bytes": 2882007040,
+      "sha256": "c9d60f930dd2a6fd052679d16ea63221f89884b7b30e766df55775181958eecf"
+    },
+    {
+      "path": "preload/paks/client/shared_truck_texures_4.pak",
+      "bytes": 333512704,
+      "sha256": "0285e0e2306c72fc758bde3fc4577af21ba08e2412d43901b15e07cc11c4aaab"
+    }
+  ],
+  "generated_files": [
+    {
+      "path": "steam_appid.txt",
+      "text": "1465360\n",
+      "bytes": 8,
+      "sha256": "3ab808f1d8ddfcd41904837c69711de951b1813b41a5ec9dd329bfe9c8db0286"
+    }
+  ]
+}

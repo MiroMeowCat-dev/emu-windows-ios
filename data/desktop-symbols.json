@@ -1,0 +1,514 @@
+[
+  {
+    "symbol": "_AudioUnitSetProperty",
+    "library": "AudioUnit"
+  },
+  {
+    "symbol": "_CGAcquireDisplayFadeReservation",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGAssociateMouseAndMouseCursorPosition",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGCaptureAllDisplays",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayBounds",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayCapture",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayCopyAllDisplayModes",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayCopyDisplayMode",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayFade",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayIDToOpenGLDisplayMask",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayIOServicePort",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayIsMain",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayMirrorsDisplay",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayModeCopyPixelEncoding",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayModeGetHeight",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayModeGetIOFlags",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayModeGetPixelHeight",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayModeGetPixelWidth",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayModeGetRefreshRate",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayModeGetWidth",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayModeIsUsableForDesktopGUI",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayModeRelease",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayMoveCursorToPoint",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayPixelsHigh",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayPixelsWide",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayRelease",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplayScreenSize",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGDisplaySetDisplayMode",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGGetDisplayTransferByTable",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGGetOnlineDisplayList",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGMainDisplayID",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGReleaseAllDisplays",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGReleaseDisplayFadeReservation",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGSetDisplayTransferByTable",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGShieldingWindowLevel",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CGWarpMouseCursorPosition",
+    "library": "CoreGraphics"
+  },
+  {
+    "symbol": "_CVDisplayLinkCreateWithActiveCGDisplays",
+    "library": "CoreVideo"
+  },
+  {
+    "symbol": "_CVDisplayLinkCreateWithCGDisplay",
+    "library": "CoreVideo"
+  },
+  {
+    "symbol": "_CVDisplayLinkGetNominalOutputVideoRefreshPeriod",
+    "library": "CoreVideo"
+  },
+  {
+    "symbol": "_CVDisplayLinkRelease",
+    "library": "CoreVideo"
+  },
+  {
+    "symbol": "_CVDisplayLinkSetCurrentCGDisplayFromOpenGLContext",
+    "library": "CoreVideo"
+  },
+  {
+    "symbol": "_CVDisplayLinkSetOutputCallback",
+    "library": "CoreVideo"
+  },
+  {
+    "symbol": "_CVDisplayLinkStart",
+    "library": "CoreVideo"
+  },
+  {
+    "symbol": "_FFCreateDevice",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFDeviceCreateEffect",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFDeviceGetForceFeedbackCapabilities",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFDeviceGetForceFeedbackProperty",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFDeviceReleaseEffect",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFDeviceSendForceFeedbackCommand",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFDeviceSetForceFeedbackProperty",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFEffectGetEffectStatus",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFEffectSetParameters",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFEffectStart",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFEffectStop",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFIsForceFeedback",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_FFReleaseDevice",
+    "library": "ForceFeedback"
+  },
+  {
+    "symbol": "_IODisplayCreateInfoDictionary",
+    "library": "IOKit"
+  },
+  {
+    "symbol": "_KBGetLayoutType",
+    "library": "Carbon"
+  },
+  {
+    "symbol": "_LMGetKbdType",
+    "library": "Carbon"
+  },
+  {
+    "symbol": "_LSOpenCFURLRef",
+    "library": "CoreServices"
+  },
+  {
+    "symbol": "_MTLCopyAllDevicesWithObserver",
+    "library": "Metal"
+  },
+  {
+    "symbol": "_MTLRemoveDeviceObserver",
+    "library": "Metal"
+  },
+  {
+    "symbol": "_NSApp",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_NSAppKitVersionNumber",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_NSApplicationDidBecomeActiveNotification",
+    "library": "AppKit",
+    "value": "NSApplicationDidBecomeActiveNotification"
+  },
+  {
+    "symbol": "_NSBackingPropertyOldScaleFactorKey",
+    "library": "AppKit",
+    "value": "NSBackingPropertyOldScaleFactorKey"
+  },
+  {
+    "symbol": "_NSDeviceRGBColorSpace",
+    "library": "AppKit",
+    "value": "NSDeviceRGBColorSpace"
+  },
+  {
+    "symbol": "_NSEventTrackingRunLoopMode",
+    "library": "AppKit",
+    "value": "NSEventTrackingRunLoopMode"
+  },
+  {
+    "symbol": "_NSFilenamesPboardType",
+    "library": "AppKit",
+    "value": "NSFilenamesPboardType"
+  },
+  {
+    "symbol": "_NSModalPanelRunLoopMode",
+    "library": "AppKit",
+    "value": "NSModalPanelRunLoopMode"
+  },
+  {
+    "symbol": "_NSPasteboardTypeString",
+    "library": "AppKit",
+    "value": "public.utf8-plain-text"
+  },
+  {
+    "symbol": "_NSRectFill",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_NSWindowDidBecomeKeyNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidBecomeKeyNotification"
+  },
+  {
+    "symbol": "_NSWindowDidChangeBackingPropertiesNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidChangeBackingPropertiesNotification"
+  },
+  {
+    "symbol": "_NSWindowDidChangeScreenNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidChangeScreenNotification"
+  },
+  {
+    "symbol": "_NSWindowDidChangeScreenProfileNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidChangeScreenProfileNotification"
+  },
+  {
+    "symbol": "_NSWindowDidDeminiaturizeNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidDeminiaturizeNotification"
+  },
+  {
+    "symbol": "_NSWindowDidEnterFullScreenNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidEnterFullScreenNotification"
+  },
+  {
+    "symbol": "_NSWindowDidExitFullScreenNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidExitFullScreenNotification"
+  },
+  {
+    "symbol": "_NSWindowDidExposeNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidExposeNotification"
+  },
+  {
+    "symbol": "_NSWindowDidMiniaturizeNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidMiniaturizeNotification"
+  },
+  {
+    "symbol": "_NSWindowDidMoveNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidMoveNotification"
+  },
+  {
+    "symbol": "_NSWindowDidResignKeyNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidResignKeyNotification"
+  },
+  {
+    "symbol": "_NSWindowDidResizeNotification",
+    "library": "AppKit",
+    "value": "NSWindowDidResizeNotification"
+  },
+  {
+    "symbol": "_NSWindowWillCloseNotification",
+    "library": "AppKit",
+    "value": "NSWindowWillCloseNotification"
+  },
+  {
+    "symbol": "_NSWindowWillEnterFullScreenNotification",
+    "library": "AppKit",
+    "value": "NSWindowWillEnterFullScreenNotification"
+  },
+  {
+    "symbol": "_NSWindowWillExitFullScreenNotification",
+    "library": "AppKit",
+    "value": "NSWindowWillExitFullScreenNotification"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSAlert",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSAppleEventManager",
+    "library": "Foundation"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSApplication",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSBezierPath",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSBitmapImageRep",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSColor",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSColorSpace",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSCursor",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSEvent",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSFont",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSGraphicsContext",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSImage",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSMenu",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSMenuItem",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSOpenGLContext",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSOpenGLPixelFormat",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSPasteboard",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSResponder",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSRunningApplication",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSScreen",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSView",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSWindow",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_CLASS_$_NSWorkspace",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_METACLASS_$_NSApplication",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_METACLASS_$_NSOpenGLContext",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_METACLASS_$_NSResponder",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_METACLASS_$_NSView",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_OBJC_METACLASS_$_NSWindow",
+    "library": "AppKit"
+  },
+  {
+    "symbol": "_TISCopyCurrentKeyboardLayoutInputSource",
+    "library": "Carbon"
+  },
+  {
+    "symbol": "_TISGetInputSourceProperty",
+    "library": "Carbon"
+  },
+  {
+    "symbol": "_UCKeyTranslate",
+    "library": "CoreServices"
+  },
+  {
+    "symbol": "_kCGDisplayShowDuplicateLowResolutionModes",
+    "library": "CoreGraphics",
+    "value": "kCGDisplayResolution"
+  },
+  {
+    "symbol": "_kTISPropertyUnicodeKeyLayoutData",
+    "library": "Carbon",
+    "value": "TISPropertyUnicodeKeyLayoutData"
+  },
+  {
+    "symbol": "_syslog$DARWIN_EXTSN",
+    "library": "libSystem"
+  },
+  {
+    "symbol": "dyld_stub_binder",
+    "library": "libSystem"
+  }
+]

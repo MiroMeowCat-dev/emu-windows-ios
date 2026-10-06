@@ -1,0 +1,60 @@
+{
+  "game": "SnowRunner",
+  "distribution": "Steam macOS",
+  "steam_app_id": "1465360",
+  "steam_build_id": "25096372",
+  "version": "53.5",
+  "bundle_version": "111",
+  "binaries": [
+    {
+      "source": "lib_MR2_SpinTires.dylib",
+      "framework": "GameClient",
+      "arm64_sha256": "38dde4a09d245ce5bd2090b1a3aee18d7dc5e8bda67d6acdfbc54f2ecdaa4952",
+      "original_text_sha256": "68e0af000a38cae2c7bdc2d3383e2897ad471d43ed9b9cf3d7a1ab378cbc6ab1",
+      "prepared_text_sha256": "fc748292393eb8eb5f7244528afa19359fd46ee82792e21a6b76b21b51b1152d",
+      "prepared_arm64_sha256": "276805d490bbc2ddc8c8469484dd5046ef2c3171c7364f83c14b63243cd56232"
+    },
+    {
+      "source": "libEOSSDK-Mac-Shipping.dylib",
+      "framework": "EOS",
+      "arm64_sha256": "f14b15ad42a8a4e8969218b1fe6d3dac364663dc982a09682e1799c547f2615f",
+      "original_text_sha256": "e96af9d0cab0b1a322e327673416b66e7a1f0c650ac9691a611774de6179a49c",
+      "prepared_text_sha256": "e96af9d0cab0b1a322e327673416b66e7a1f0c650ac9691a611774de6179a49c",
+      "prepared_arm64_sha256": "6e3d286e0e2b778ec5b3589cae839ae07747348ad9e2a84ef7171e3559ef938d"
+    },
+    {
+      "source": "libsteam_api.dylib",
+      "framework": "SteamAPI",
+      "arm64_sha256": "7db457da9b0cb8ebb882ba9dd5ea73a2694166891cbacafdd004e5b17952bade",
+      "original_text_sha256": "dc4ff3fe131558abb69ca7366ad02c2e4d1cf9fc3c6fc33980f61b97c702783f",
+      "prepared_text_sha256": "dc4ff3fe131558abb69ca7366ad02c2e4d1cf9fc3c6fc33980f61b97c702783f",
+      "prepared_arm64_sha256": "8b5afc9210b254e7ae1e837b5152e0ebac1025fb382b12a1e3db0c35381417c5"
+    }
+  ],
+  "instruction_patches": [
+    {
+      "offset": "0xdb5800",
+      "old_word": "0x97df34f5",
+      "new_word": "0x97debd68",
+      "purpose": "Use native local-file save storage",
+      "old_target": "0x582bd4",
+      "new_target": "0x564da0"
+    },
+    {
+      "offset": "0x39d568",
+      "old_word": "0x94000035",
+      "new_word": "0x97ffff27",
+      "purpose": "Use the game's built-in offline mod.io provider",
+      "old_target": "0x39d63c",
+      "new_target": "0x39d204"
+    }
+  ],
+  "config_patches": [
+    {
+      "offset": "0x2b80cab",
+      "old": "steam.enabled",
+      "new": "ios.no_steam_",
+      "registered_default": false
+    }
+  ]
+}

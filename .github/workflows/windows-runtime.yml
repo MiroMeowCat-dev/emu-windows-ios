@@ -1,0 +1,53 @@
+name: Build Windows tool and public iOS runtime
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ios-runtime:
+    # Xcode 27 runner is currently public preview. No Apple credentials needed.
+    runs-on: xcode-27
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.13'
+      - name: Test including comparison with Apple codesign
+        run: python -m unittest discover -s tests -v
+      - name: Build public runtime without game content
+        run: python -m tools.runtime
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: emu-ios-runtime
+          path: build/releases/emu-ios-runtime.zip
+          if-no-files-found: error
+      - name: Upload build logs
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: ios-build-logs
+          path: build/logs/
+  windows-tool:
+    runs-on: windows-2025
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.13'
+      - run: python -m unittest discover -s tests -v
+      - run: python -m pip install --target build/packaging-deps pyinstaller==6.22.3
+      - run: python -m tools.freeze
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: EmuWindows-portable
+          path: build/releases/EmuWindows-portable.zip
+          if-no-files-found: error

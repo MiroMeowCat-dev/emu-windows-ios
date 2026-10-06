@@ -1,0 +1,17 @@
+# Local game binaries, SDL downloads, compiled products, device logs.
+/build/
+/.cache/
+/config.local.json
+/Config/Local.xcconfig
+/.DS_Store
+**/.DS_Store
+__pycache__/
+*.pyc
+xcuserdata/
+*.xcuserstate
+*.mobileprovision
+*.p12
+*.pfx
+*.ipa
+*.app/
+*.dSYM/

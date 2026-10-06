@@ -1,0 +1,106 @@
+--- a/src/events/SDL_keyboard_c.h
++++ b/src/events/SDL_keyboard_c.h
+@@ -53,7 +53,7 @@
+ extern int SDL_SendKeyboardUnicodeKey(Uint32 ch);
+ 
+ /* Send a key from a virtual key source, like an on-screen keyboard */
+-extern int SDL_SendVirtualKeyboardKey(Uint8 state, SDL_Scancode scancode);
++extern DECLSPEC int SDL_SendVirtualKeyboardKey(Uint8 state, SDL_Scancode scancode);
+ 
+ /* Send a keyboard key event */
+ extern int SDL_SendKeyboardKey(Uint8 state, SDL_Scancode scancode);
+--- a/src/video/uikit/SDL_uikitmodes.m
++++ b/src/video/uikit/SDL_uikitmodes.m
+@@ -296,7 +296,7 @@
+ int UIKit_AddDisplay(UIScreen *uiscreen, SDL_bool send_event)
+ {
+     UIScreenMode *uiscreenmode = uiscreen.currentMode;
+-    CGSize size = uiscreen.bounds.size;
++    CGSize size = UIKit_SceneBounds(uiscreen).size;
+     SDL_VideoDisplay display;
+     SDL_DisplayMode mode;
+     SDL_DisplayData *data;
+@@ -355,7 +355,8 @@
+ {
+ #if !TARGET_OS_TV
+     if (uiscreen == [UIScreen mainScreen]) {
+-        return UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation);
++        CGSize size = UIKit_SceneBounds(uiscreen).size;
++        return size.width > size.height;
+     } else
+ #endif /* !TARGET_OS_TV */
+     {
+@@ -480,7 +481,7 @@
+     @autoreleasepool {
+         int displayIndex = (int) (display - _this->displays);
+         SDL_DisplayData *data = (__bridge SDL_DisplayData *) display->driverdata;
+-        CGRect frame = data.uiscreen.bounds;
++        CGRect frame = UIKit_SceneBounds(data.uiscreen);
+ 
+         /* the default function iterates displays to make a fake offset,
+          as if all the displays were side-by-side, which is fine for iOS. */
+@@ -525,7 +526,7 @@
+ #if !TARGET_OS_TV
+ void SDL_OnApplicationDidChangeStatusBarOrientation(void)
+ {
+-    BOOL isLandscape = UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation);
++    BOOL isLandscape = UIKit_IsDisplayLandscape(UIScreen.mainScreen);
+     SDL_VideoDisplay *display = SDL_GetDisplay(0);
+ 
+     if (display) {
+--- a/src/video/uikit/SDL_uikitvideo.h
++++ b/src/video/uikit/SDL_uikitvideo.h
+@@ -33,6 +33,8 @@
+ 
+ @end
+ 
++UIWindowScene *UIKit_ActiveScene(UIScreen *screen);
++CGRect UIKit_SceneBounds(UIScreen *screen);
+ CGRect UIKit_ComputeViewFrame(SDL_Window *window, UIScreen *screen);
+ 
+ #endif /* __OBJC__ */
+--- a/src/video/uikit/SDL_uikitvideo.m
++++ b/src/video/uikit/SDL_uikitvideo.m
+@@ -194,9 +194,28 @@
+     return [[UIDevice currentDevice].systemVersion doubleValue] >= version;
+ }
+ 
++// SnowRunner host: use scene coordinates rather than legacy status-bar orientation.
++UIWindowScene *UIKit_ActiveScene(UIScreen *screen)
++{
++    for (UIScene *scene in UIApplication.sharedApplication.connectedScenes) {
++        if ([scene isKindOfClass:UIWindowScene.class] &&
++            scene.activationState == UISceneActivationStateForegroundActive &&
++            ((UIWindowScene *)scene).screen == screen) return (UIWindowScene *)scene;
++    }
++    return nil;
++}
++
++CGRect UIKit_SceneBounds(UIScreen *screen)
++{
++    UIWindowScene *scene = UIKit_ActiveScene(screen);
++    return scene ? scene.coordinateSpace.bounds : screen.bounds;
++}
++
+ CGRect UIKit_ComputeViewFrame(SDL_Window *window, UIScreen *screen)
+ {
+     SDL_WindowData *data = (__bridge SDL_WindowData *) window->driverdata;
++    UIWindowScene *scene = data.uiwindow.windowScene ?: UIKit_ActiveScene(screen);
++    if (scene) return scene.coordinateSpace.bounds;
+     CGRect frame = screen.bounds;
+ #if !TARGET_OS_TV
+     UIInterfaceOrientation orient;
+--- a/src/video/uikit/SDL_uikitwindow.m
++++ b/src/video/uikit/SDL_uikitwindow.m
+@@ -207,7 +207,10 @@
+ 
+         /* ignore the size user requested, and make a fullscreen window */
+         /* !!! FIXME: can we have a smaller view? */
+-        uiwindow = [[SDL_uikitwindow alloc] initWithFrame:data.uiscreen.bounds];
++        UIWindowScene *scene = UIKit_ActiveScene(data.uiscreen);
++        uiwindow = scene ? [[SDL_uikitwindow alloc] initWithWindowScene:scene] :
++                           [[SDL_uikitwindow alloc] initWithFrame:data.uiscreen.bounds];
++        if (scene) uiwindow.frame = scene.coordinateSpace.bounds;
+ 
+         /* put the window on an external display if appropriate. */
+         if (data.uiscreen != [UIScreen mainScreen]) {

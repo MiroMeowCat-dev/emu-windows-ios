@@ -1,0 +1,6 @@
+{
+  "game": "~/Library/Application Support/Steam/steamapps/common/SnowRunner/SnowRunner.app",
+  "team": "YOUR_TEAM_ID",
+  "bundle_id": "dev.yourname.emu.snowrunner",
+  "device": ""
+}
