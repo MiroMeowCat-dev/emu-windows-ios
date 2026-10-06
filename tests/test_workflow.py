@@ -3,6 +3,7 @@ from contextlib import ExitStack, redirect_stdout
 import hashlib
 import io
 import json
+import os
 from pathlib import Path
 import re
 import shutil
@@ -175,10 +176,13 @@ class TouchPointerTests(unittest.TestCase):
     @unittest.skipUnless(shutil.which("cc"), "C compiler is not installed on this host")
     def test_real_c_pointer_logic(self):
         with tempfile.TemporaryDirectory() as temporary:
-            binary = Path(temporary) / "touch-pointer-test"
-            subprocess.run(["cc", "-std=c11", "-Wall", "-Wextra", "-Werror",
-                            "-fsanitize=address,undefined", str(ROOT / "tests/touch_pointer.c"),
-                            "-o", str(binary)], check=True, capture_output=True)
+            binary = Path(temporary) / ("touch-pointer-test.exe" if os.name == "nt" else "touch-pointer-test")
+            # MinGW on the Windows runner has no address/undefined sanitizer
+            # runtime. Execute the C assertions there, and sanitize on macOS.
+            sanitizers = [] if os.name == "nt" else ["-fsanitize=address,undefined"]
+            compilation = subprocess.run(["cc", "-std=c11", "-Wall", "-Wextra", "-Werror"] + sanitizers +
+                            [str(ROOT / "tests/touch_pointer.c"), "-o", str(binary)], capture_output=True, text=True)
+            self.assertEqual(compilation.returncode, 0, compilation.stdout + compilation.stderr)
             subprocess.run([str(binary)], check=True, capture_output=True)
 
 
