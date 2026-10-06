@@ -23,11 +23,16 @@ uses an external sideloading tool. Windows `.exe` games are still unsupported.
 - GUI source launcher: `emu-windows.cmd` (Python 3.10+).
 - Portable EXE build: `python -m tools.freeze` (see build dependency instructions).
 - Cloud workflow: `.github/workflows/windows-runtime.yml`, manually dispatched.
+- Recommended download: **EmuWindows-starter** workflow artifact, containing the
+  portable EXE, matching public runtime and unsigned device diagnostic IPA.
 - [Windows 中文使用说明、当前验证状态](docs/WINDOWS-zh.md).
 
-This port's Windows assembly and resource logic have structural fixture tests.
-Its cloud build, new iPhone UI, actual game conversion and sideloading still need
-validation. The upstream device results below describe the original Mac workflow.
+This port's cloud iOS compilation and Windows EXE build have passed. Its assembly
+and resource logic also have structural fixture tests. The starter job runs the
+frozen EXE with a real runtime to generate and validate a diagnostic IPA, with
+Python removed from PATH and a Unicode output path. Actual game conversion,
+iPhone behavior and sideloading still need device validation. The upstream device
+results below describe the original Mac workflow.
 
 Demo: [SnowRunner's Mac version running locally on an iPhone](https://www.reddit.com/r/EmulationOniOS/comments/1wpddpd/snowrunners_mac_version_running_locally_on_an/)
 

@@ -7,7 +7,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import webbrowser
 
-from .common import BUILD, ROOT, UserError
+from .common import BUILD, ROOT, WORKSPACE, UserError
 from .source import preflight
 from .windows import assemble, inspect_runtime, stage_resources
 
@@ -20,7 +20,8 @@ class WindowsApp:
         window.minsize(820, 650)
         self.events = queue.Queue()
         self.busy = False
-        self.runtime = tk.StringVar()
+        bundled_runtime = WORKSPACE / "runtime/emu-ios-runtime.zip"
+        self.runtime = tk.StringVar(value=str(bundled_runtime) if bundled_runtime.is_file() else "")
         self.game = tk.StringVar()
         self.output = tk.StringVar(value=str(BUILD / "windows"))
         self.bundle = tk.StringVar(value="local.emu.snowrunner")
@@ -55,7 +56,8 @@ class WindowsApp:
         self.game_button = self.button(actions, "制作游戏 IPA", lambda: self.package(True))
         self.resource_button = self.button(actions, "准备游戏资源", self.resources)
         self.preflight_button = self.button(actions, "检查游戏文件", self.check_game)
-        self.state = tk.StringVar(value="尚未选择运行库。先打开使用说明，完成一次云端构建。")
+        self.state = tk.StringVar(value="已找到入门包内的运行库，可先校验或直接制作诊断 IPA。" if bundled_runtime.is_file()
+                                  else "尚未选择运行库。先打开使用说明，完成一次云端构建。")
         ttk.Label(body, textvariable=self.state, wraplength=810).grid(row=5, column=0, sticky="w", pady=(0, 6))
         self.progress = ttk.Progressbar(body, mode="indeterminate")
         self.progress.grid(row=6, column=0, sticky="ew", pady=(0, 8))

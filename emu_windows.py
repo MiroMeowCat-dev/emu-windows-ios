@@ -14,9 +14,12 @@ def main():
         window = tk.Tk()
         window.withdraw()
         app = WindowsApp(window)
+        detected_runtime = app.runtime.get()
+        app.runtime.set("")
         window.update_idletasks()
         report = {"frozen": bool(getattr(sys, "frozen", False)), "gui_initialized": True,
                   "contract_key": contract_key(), "resource_files": len(manifest_files()),
+                  "detected_runtime": detected_runtime,
                   "bundled_help": (ROOT / "docs/WINDOWS-zh.md").is_file(),
                   "game_action_disabled_without_files": str(app.game_button.cget("state")) == "disabled",
                   "runtime_action_disabled_without_runtime": str(app.check_button.cget("state")) == "disabled"}

@@ -9,10 +9,10 @@
 | --- | --- |
 | Windows x64 图形工具、无需安装 Python 的便携 EXE | 已实现；本地启动检查通过后才生成发布 ZIP |
 | 原游戏 ARM64 提取、移除旧签名、平台和路径修改、指令补丁 | 已实现；原始文件与最终文件都必须匹配上游 SHA-256 |
-| 无游戏的诊断 IPA、游戏 IPA 组装 | 已实现；使用结构测试文件验证过 Windows 组装流程 |
+| 无游戏的诊断 IPA、游戏 IPA 组装 | 已实现；入门包构建使用真实运行库和便携 EXE 校验诊断 IPA；实际游戏尚未测试 |
 | 资源整理、全文件校验、重跑续传、损坏文件修复 | 已实现；小型资源测试通过，约 52 GB 实际资源尚未测试 |
-| iPhone 内导入文件夹、校验资源、运行诊断、启动游戏 | 已编写；需要云端编译和实机验证 |
-| 云端 iOS 运行库构建 | 已提供工作流；尚未在你的 GitHub 仓库运行 |
+| iPhone 内导入文件夹、校验资源、运行诊断、启动游戏 | 云端编译通过；尚未实机验证 |
+| 云端 iOS 运行库构建 | 已在 MiroMeowCat-dev/emu-windows-ios 成功运行，无需 Apple 密钥和游戏 |
 | Windows 签名和安装 | 交给侧载工具；未做实机验证，也未集成 Apple 登录 |
 | Windows `.exe` / 任意游戏 / Windows 普通软件 | 不支持；原项目没有 Wine 或 x86 指令翻译层 |
 
@@ -21,7 +21,11 @@
 
 ## 1. 打开 Windows 工具
 
-解压 `EmuWindows-portable.zip` 到有写入权限的目录（例如文档目录）。
+推荐下载 **EmuWindows-starter** artifact，解开 GitHub 外层 ZIP，再解压其中的 `EmuWindows-starter.zip` 到有写入权限的目录（例如文档目录）。
+该入门包已包含运行库和 `diagnostic/EmuCheck-unsigned.ipa`；工具打开后自动找到旁边的运行库。
+现在没有游戏，可以直接对这个诊断 IPA 签名安装，不必再次制作。
+
+`EmuWindows-portable.zip` 是仅工具的包，需要另外选择运行库。
 打开 `EmuWindows/EmuWindows.exe`；保留旁边的 `_internal` 文件夹，不能只复制 EXE。
 这是 Windows x64 便携版，没有安装程序和发行者签名。
 
@@ -29,7 +33,10 @@
 
 ## 2. 获得运行库：只需一次云端构建
 
-将这份修改后的项目源码放入你有写权限的 GitHub 仓库。
+已创建的源码仓库：[MiroMeowCat-dev/emu-windows-ios](https://github.com/MiroMeowCat-dev/emu-windows-ios)。
+使用入门包时可以跳过本节；重新构建或更新源码时才需要运行工作流。
+
+如需使用另一个仓库，将这份修改后的项目源码放入你有写权限的 GitHub 仓库。
 只上传源码；不要上传 `build/`、游戏、个人配置、Apple 证书或密码。
 可以 Fork 上游项目，然后将工具源码包里的文件放进 Fork。工具源码包也包含 `.github/workflows/windows-runtime.yml`。
 GitHub 网页上传通常不方便保留隐藏目录，使用 Git 推送可保留 `.github` 工作流。
@@ -37,8 +44,8 @@ GitHub 网页上传通常不方便保留隐藏目录，使用 Git 推送可保�
 1. 仓库的 Actions 页面，选择 **Build Windows tool and public iOS runtime**。
 2. 点击 **Run workflow**。
 3. 等待 `ios-runtime` 任务成功。它下载已固定校验值的 SDL，编译公开代码，不需要 Apple ID、证书或游戏。
-4. 下载 **emu-ios-runtime** artifact，解开 GitHub 外层下载 ZIP，得到 `emu-ios-runtime.zip`。
-5. 在 Windows 工具的“iOS 运行库”栏选择这个文件，点击“校验运行库”。
+4. 等待 `windows-tool`、`windows-starter` 成功，下载 **EmuWindows-starter** artifact，按上一节解压。
+5. 如果只需要运行库，可下载 **emu-ios-runtime** artifact，解开 GitHub 外层 ZIP，得到 `emu-ios-runtime.zip`，在工具中选择它。
 
 运行库必须与 Windows 工具来自相同源码版本。工具会核对源码契约、全部文件 SHA-256、iOS 平台和 ARM64 架构。
 这些校验保证文件完整和版本一致，不能证明第三方发布者可信；使用自己仓库构建的文件。
@@ -81,7 +88,7 @@ IPA 内 `Memory.entitlements` 及回执记录了所需的
 选择 `.app` 文件夹，点击“检查游戏文件”，通过后点击“制作游戏 IPA”。
 工具依次提取、验证和修改三个 ARM64 动态库；最终文件指纹必须与原项目提供的值完全一致，否则不输出新 IPA。
 这一步无需 `lipo`、`codesign` 或 Xcode，也不会修改原始游戏。
-当前还没有真实游戏文件来验证这条路径，云端测试会额外比较 Python 移除签名和 Apple `codesign` 的结果。
+当前还没有真实游戏文件来验证这条路径。云端测试已比较 Python 移除签名和 Apple `codesign` 的结果，测试样本字节一致。
 
 点击“准备游戏资源”，生成 `SnowRunner.emuresources` **文件夹**，不是压缩包。
 会校验并复制约 52 GB 资源，只收集清单中的文件，不收集存档。

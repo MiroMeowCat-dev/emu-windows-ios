@@ -54,7 +54,7 @@ def freeze():
             "bundled_help", "game_action_disabled_without_files", "runtime_action_disabled_without_runtime"]):
         raise UserError("Packaged EXE resources or startup check failed.")
     write_json(distribution / "build-info.json", dict(checks, version="0.2-preview", device_tested=False,
-               ios_runtime_included=False, source_commit="", supported_host="Windows x64", signing_included=False))
+               ios_runtime_included=False, source_commit=os.environ.get("GITHUB_SHA", ""), supported_host="Windows x64", signing_included=False))
     release = BUILD / "releases/EmuWindows-portable.zip"
     release.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix=".emu-win-release-", dir=release.parent) as directory:
